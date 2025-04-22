@@ -12,7 +12,7 @@ Original file is located at
 import streamlit as st
 from hotel_booking_model import HotelBookingModel
 
-st.title("Hotel Booking Cancellation Predictor")
+st.title("Hotel Booking Cancellation Status Prediction")
 model = HotelBookingModel()
 
 st.sidebar.header('Booking Details')
@@ -38,7 +38,7 @@ inputs = {
 
 if st.button('Predict Cancellation'):
     result = model.predict(inputs)
-    st.subheader(f"Prediction: {result}")
+    st.subheader(f"Booking Prediction: {result}")
 
 #test case
 st.markdown("### Test Cases")
