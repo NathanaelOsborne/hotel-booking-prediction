@@ -9,8 +9,6 @@ Original file is located at
 # **Install Streamlit Library**
 """
 
-pip install streamlit
-
 import streamlit as st
 from hotel_booking_model import HotelBookingModel
 
